@@ -1,0 +1,24 @@
+ext {
+    devConfig = [
+            pixabay: "\"https://pixabay.com/\"",
+            apiKey : "\"2116954-2d16637df334cb4819df7cbf7\"",
+            breweries : "\"http://api.brewerydb.com/v2/\"",
+            breweriesApiKey : "\"595f9b678d9a88434f7e5c72f8cfac38\""
+    ]
+
+    prodConfig = [
+            pixabay: "\"https://pixabay.com/\"",
+            apiKey : "\"2116954-2d16637df334cb4819df7cbf7\""
+    ]
+
+    mockConfig = [
+            pixabay: "\"https://pixabay.com/\"",
+            apiKey : "\"2116954-2d16637df334cb4819df7cbf7\""
+    ]
+
+    compileConfig = [
+            dev : 'devDebug',
+            prod: 'prodRelease',
+            mock: 'mockDebug'
+    ]
+}

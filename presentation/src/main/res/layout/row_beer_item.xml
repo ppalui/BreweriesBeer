@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layoutBeerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_tiny">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.navik.presentation.ui.widget.SquareImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/img_thumbnail_extra_large"
+                android:layout_height="wrap_content"
+                tools:background="@color/transparent_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/imageView"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBeersName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/spacing_small"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:text="Name Short Display"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/textViewBeersType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/spacing_small"
+                    android:paddingStart="@dimen/spacing_small"
+                    android:text="Beers type" />
+
+                <com.navik.presentation.ui.widget.DividerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewIsOrganic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_checked"
+                        android:drawablePadding="@dimen/spacing_small"
+                        android:gravity="center"
+                        android:paddingEnd="@dimen/spacing_small"
+                        android:paddingStart="@dimen/spacing_small"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:text="@string/organic"
+                        android:textColor="@color/color_green"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/textViewDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_small"
+                        android:paddingTop="@dimen/spacing_medium"
+                        android:text="@string/details"
+                        android:textColor="@color/color_orange" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

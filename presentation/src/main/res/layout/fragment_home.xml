@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fillColor="@color/primary_white"
+        app:pageColor="@color/color_black"
+        app:radius="@dimen/spacing_tiny"
+        app:slideInterval="6000"
+        app:strokeColor="@color/primary">
+    </com.synnapps.carouselview.CarouselView>
+
+    <LinearLayout
+        android:id="@+id/layoutSeeMoreBeer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_black"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/see_more_beers"
+            android:textColor="@color/primary_white"
+            android:textSize="@dimen/text_size_medium"/>
+
+    </LinearLayout>
+
+</FrameLayout>

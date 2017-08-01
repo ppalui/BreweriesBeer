@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Base Project</string>
+
+    <!-- Global -->
+    <string name="search">Search</string>
+    <string name="keyword">Keyword…</string>
+    <string name="beers_title">All Beers</string>
+    <string name="see_more_beers">See more Beers >></string>
+    <string name="organic">ORGANIC</string>
+    <string name="details">DETAILS</string>
+
+    <!-- Exception messages-->
+    <string name="exception_message_generic">There was an application error</string>
+    <string name="exception_message_no_connection">There is no internet connection</string>
+    <string name="exception_message_http_error">Server not available</string>
+    <string name="exception_message_unauthorized">Unauthorized</string>
+
+    <!-- Dialog -->
+    <string name="dialog_complete">Complete</string>
+    <string name="dialog_error">Error</string>
+
+    <!-- Home -->
+    <string name="loading_image">Loading images…</string>
+
+    <string name="empty">EMPTY</string>
+    <string name="error">ERROR</string>
+</resources>
